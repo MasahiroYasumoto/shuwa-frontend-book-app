@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { CSSTransition } from 'react-transition-group'
 import ReviewList from './ReviewList'
 import type { Book } from './app'
-// import createBookListItem from './createBookListItem'
 
 function BookListItem({ book }: {book: Book}) {
     const [showReview, setShowReview] = useState(false)
@@ -20,7 +19,7 @@ function BookListItem({ book }: {book: Book}) {
               </h3>
               <p className="book-list__item__inner__info__overview">{book.overview}</p>
               <p className="book-list__item__inner__info__comment">
-                <a className="book-list__item__inner__info__comment__link" onClick={() => { setShowReview(!showReview)}}>
+                <a href="#" className="book-list__item__inner__info__comment__link" onClick={() => { setShowReview(!showReview)}}>
                   {book.reviews.length}件の感想・評価
               </a>
               </p>

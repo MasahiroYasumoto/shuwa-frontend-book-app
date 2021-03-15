@@ -75,7 +75,6 @@ body {
 
 /* レビューリスト */
 .review {
-  /* display: none; */
   max-height: 0;
   overflow-y: hidden;
 }
