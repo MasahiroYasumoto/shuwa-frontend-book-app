@@ -25,7 +25,7 @@ function BookListItem({ book }: {book: Book}) {
               </p>
             </div>
           </div>
-          <CSSTransition in={showReview} timeout={200} className="review">
+          <CSSTransition in={showReview} timeout={200} classNames="review">
             <div className="review">
                 <ReviewList reviews={book.reviews} />
                 <form className="review__form">
